@@ -3,51 +3,77 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>CEE</title>
+    <title>Corporacion Educativa Ecuador</title>
     <link rel="stylesheet" href="styles.css">
-    <link rel="icon" type="imagen/x-icon" href="img/logo.png"/>
-
+    <link rel="icon" type="image/x-icon" href="img/logo.png">
 </head>
-
 <body>
-
-    <header>
-        <h1>Corporacion Educativa Ecuador</h1>
-            <p>¡Nuestra menta es la excelencia!</p>
-            </header>
-            <nav>
-                <ul>
-                    <li><a href=" ">Inicio</a></li>
-                    <li><a href=" ">Contacto</a></li>
-                    <li><a href=" ">Informacion</a></li>
-                    <li><a href=" ">Inicio de Sesion</a></li>
-                </ul>
+    <!--Encabezado con el logo y menu de navegacion-->
+    <header class="header">
+        <div class="container header-content">
+            <!--Logo Institucional-->
+            <img src="img/logo.png" alt="Logo CEE" class="logo">
+            <!--Menu de Navegacion-->
+            <nav class="nav">
+              <ul class="nav-list">
+                <li><a href="#inicio">Inicio</a></li>
+                <li><a href="#capacitaciones">Capacitaciones</a></li>
+                <li><a href="#nosotros">Nosotros</a></li>
+                <li><a href="#contacto">Contacto</a></li>
+              </ul>
             </nav>
-            <main>
-                <article>
-                    <h2>Area de Informatica</h2>
-                    <p>Todos deberian de aprender a programar una computadora</p>
-                </article>
+        </div>
+    </header> 
+    <!--Seccion principal de Bienvenida-->
+    <section class="hero" id="inicio">
+      <div class="container">
+       <h1>Formato Profesional Del Futuro</h1>
+       <p>La Corporacion Educativa Ecuador ofrece formacion
+         tecnica de calidad para transformar vidas.</p>
+      </div>
+    </section> 
+    <!--Seccion de Capacitaciones-->
+    <section class="capacitaciones" id="capacitaciones">
+       <div class="grid">
+         <div class="card">Belleza Integral</div>
+         <div class="card">Informatica</div>
+         <div class="card">Contabilidad y Administracion</div>
+         <div class="card">Urgencias y Emergencias Medicas</div>
+         <div class="card">Emfermeria</div>
+         <div class="card">Parvularia</div>
+       </div>
+    </section>
+    <!--Seccion sobre nosotros-->
+    <section class="nosotros" id="nosotros">
+      <div class="container">
+        <h2>¿Quienes Somos?</h2>
+        <p>
+            Somos una Corporacion Educativa dedicada a la formacion tecnica 
+            y profesional en diversas areas del conocimiento.
+            Nuestra mision es brindar oportunidades de desarrollo a
+            jovenes y adultos mediante Capacitaciones de alta calidad academico.
+        </p>
+      </div>
+    </section>
+    <!--Seccion Contacto-->
+    <section class="contacto" id="contacto">
+      <div class="container">
+        <h2>Contactanos</h2>
+        <form class="formulario">
+          <input type="text" placeholder="Tu nombre" required>
+          <input type="email" placeholder="Tu correo" required>
+          <textarea placeholder="Escribe tu mensaje" required></textarea>
+          <button type="submit">Enviar</button>
+        </form>
+      </div>
+    </section>
 
-                <section>
-                    <h3>Capacitaciones tecnicos profesiones de la CEE</h3>
-                    <ul>
-                        <li><a href=" ">Capacitaciones de Emfermeria</a></li>
-                        <li><a href=" ">Capacitaciones de Belleza Integral</a></li>
-                        <li><a href=" ">Capacitaciones de Parvularia</a></li>
-                        <li><a href=" ">Capacitaciones de Urgencias y Emergencias </a></li>
-                        <li><a href=" ">Capacitaciones de Contabilidad y Administraccion </a></li>
-                    </ul>
-                </section>
-            </main>
-            <aside>
-                <h4>Sobre Nosotros</h4>
-                <p>Somos una Corporacion Enfocada en el desarrollo de Profesionales en las diversas areas de las tendencias actuales</p>
-            </aside>
-            <footer>
-                <p>Copyright 2025 / CEE Todos los Derechos Reservados/ Desarrollado By Dayana </p>
-            </footer>
-            
-
+    <!--Pie de Pagina-->
+     <footer class="footer">
+       <p> Copyrigt 2025 Corporacion Educativa Ecuador.
+          Todos los derechos reservador.
+          Desarrollado by Dayana Manobanda. 
+       </p>
+     </footer>
 </body>
 </html>
