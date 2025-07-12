@@ -80,10 +80,9 @@ body {
     border-radius: 8px;
     text-align: center;
     font-weight: bold;
-    /* ---------------------- */
+}
+    
 /* SECCIÓN NOSOTROS */
-/* ---------------------- */
-
 .nosotros {
     background-color: #f0f0f0;
     padding: 40px 0;
