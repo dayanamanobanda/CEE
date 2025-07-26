@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registro de Asistencia</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <form class="formulario">
+        <h1>Registro de Asistencia</h1>
+
+        <label for="nombre">Escriba sus Nombres Completos:</label>
+        <input type="text" name="nombre"placeholder="Nombres Completos" required>
+
+        <label for="cedula">Escriba su Numero de Cédula:</label>
+        <input type="text" name="cedula"placeholder="Cédula" required>   
+        </select>
+
+        <label for="capacitacion">Elija el Área de Capacitación:</label>
+        <select name="capacitaciones">
+         <option value="" disabled selected> Área de Capacitación</option>
+         <option value="Belleza integral"> Belleza Integral</option>
+         <option value="Informática"> Informática</option>
+         <option value="Contabilidad y Administracion"> Contabilidad y Administración</option>
+         <option value="Uregencias Medicas"> Uregencias Médicas</option>
+         <option value="Enfermeria"> Enfermería</option>
+         <option value="Parvularia"> Parvularia</option>
+        </select>
+
+        <label for="dia">Elija el Dia de Clases:</label>
+        <select name="dia">
+        <option value="" disabled selected>Dia de clases</option>
+        <option value="Viernes"> Viernes</option>
+        <option value="Sabado">Sabádo</option>
+        </select>
+
+        <label for="horario">Elija el Horario:</label>
+        <select name="horario">
+        <option value="" disabled selected>Horario de Clases</option>
+        <option value="Mañana">Mañana</option>
+        <option value="Tarde">Tarde</option>
+        </select>
+
+        <label for="periodo">Elija el Período Académico:</label>
+        <select name="periodo">
+        <option value="" disabled selected>Período Académico</option>
+        <option value="Noviembre">2024 - 2025</option>
+        <option value="Mayo">2025 - 2026</option>
+        </select>
+        <label>Elija la Asistencia:</label> 
+        <div class="opciones-asistencia">
+            <label><input type="radio" name="asistencia">Presente</label>
+            <label><input type="radio" name="asistencia">Ausente</label>
+            <label><input type="radio" name="asistencia">Falata Injustificada</label>
+            <label><input type="radio" name="asistencia">Falarta Justificada</label>
+        </div>
+
+        <button type="submit">Registro Asistencia</button>
+        <button type="button">Cancelar</button>
+    </form>
+</body>
+</html>
